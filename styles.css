@@ -1,0 +1,162 @@
+@import url('/Poppins\ \(1\)/');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+body {
+    font-size: 14px;
+    color: #777;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-family: "Poppins, sans-serif";
+    font-weight: 400;
+    top: 0 !important;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    background-blend-mode: overlay;
+  }
+
+.sidebar_toggeler{
+    position:fixed;
+    top: 36px;
+    right: 36px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: none;
+    background-color: #424245;
+}
+
+.sidebar_toggeler:hover{
+    background-color: #07091c;
+    cursor: pointer;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.container .svg1{
+    margin: 11px 3px 3px 11px;
+    border-color: #ff6f6f;
+}
+
+.container .svg2{
+    margin: 11px 11px 3px 3px;
+    border-color: #8c6fff;
+}
+
+.container .svg3{
+    margin: 3px 3px 11px 11px;
+    border-color: #ff6f6f;
+}
+
+.container .svg4{
+    margin: 3px 11px 11px 3px;
+    border-color: #ff6f6f;
+}
+
+.svg{
+    height: 8px;
+    width: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+    display: none;   
+    transition: all 0.5s ease 0s;
+}
+
+.sidebar.active{
+    display: block;
+}
+
+.sidebar_open .active {
+    right: 0; /* slides into view */
+    pointer-events: all;
+  }
+
+.sidebar_open{
+    width: 250px;
+    height: 100%;
+    padding: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    position: fixed;
+    left: auto;
+    top: 0;
+    right: 0;
+    pointer-events : block;
+    transition: all 0.5s  0s;
+    background-color: #07091c;
+    overflow: auto;
+    opacity: 1;
+    z-index: 100;
+}
+
+.close_btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bar {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .bar1 {
+    transform: rotate(45deg);
+  }
+  
+  .bar2 {
+    transform: rotate(-45deg);
+  }
+  
+.sidebar_open{
+    height: 860px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar_open ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 420px;
+}
